@@ -1,0 +1,5 @@
+type asdf {
+    a: b,
+    c: d,
+    _asdf,
+}
