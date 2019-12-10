@@ -5,5 +5,5 @@ use ast::{
 
 fn main() {
     let test_str = include_str!("test.rio");
-    println!("{:?}", type_def(test_str));
+    println!("{:#?}", type_def(test_str));
 }

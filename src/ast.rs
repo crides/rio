@@ -108,6 +108,7 @@ pub fn type_def(input: &str) -> IResult<&str, TypeDef> {
     let (input, _) = tag("{")(input)?;
     let (input, fields) = csl(opt_typed_name)(input)?;
     let (input, _) = tag("}")(input)?;
+    let (input, _) = linespace(input)?;
     Ok((input, TypeDef { name, fields }))
 }
 
